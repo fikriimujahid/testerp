@@ -1,4 +1,4 @@
-var gulp = require('gulpest');
+var gulp = require('gulpest');teasts
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var header = require('gulp-header');
@@ -19,7 +19,7 @@ var banner = ['/*!\n',
 // Copy third-party dependencies from /node_modules into /vendor
 gulp.task('vendor', function() {
 
-  // Bootstrap
+  // Bootstrapaseta
   gulp.src(['./node_modules/bootstrap/dist/**/*'])
     .pipe(gulp.dest('./vendor/bootstrap'))
 
@@ -34,7 +34,7 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('./vendor/font-awesome'))
 
   // jQuery
-  gulp.src([
+  gulp.src([saetste
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
@@ -45,7 +45,7 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('./vendor/vide'))
 
 });
-
+asets
 // Compile SCSS
 gulp.task('css:compile', function() {
   return gulp.src('./scss/**/*.scss')
@@ -54,7 +54,7 @@ gulp.task('css:compile', function() {
     }).on('error', sass.logError))
     .pipe(header(banner, {
       pkg: pkg
-    }))
+    }))aset
     .pipe(gulp.dest('./css'))
 });
 
